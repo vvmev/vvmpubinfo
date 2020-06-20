@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cron
+
+su app sh -c 'SCREENSHOTDIR=/var/www/html/screenshots /home/app/screenshots.js' &
+
+exec /usr/sbin/nginx -g 'daemon off;'

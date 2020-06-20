@@ -1,0 +1,131 @@
+/*
+ * VVM Webcam Auto-Rotator
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,800);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ * VVM spezifische Styles
+ */
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #444;
+	overflow: hidden;
+	height: 100%;
+}
+.stage {
+	width: 100%;
+	height: 100%;
+}
+.stage .e {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+img.webcam {
+	height: 100%;
+}
+video.webcam {
+	height: 100%
+}
+body > h1 {
+	position: absolute;
+	top: 900px;
+	left: 10px;
+	padding: 10px 20px;
+	opacity: 0;
+	color: #88f;
+	text-shadow: 0.1em 0.1em 0.2em #000,
+		1px 1px #000,
+		-1px 1px #000,
+		1px -1px #000,
+		-1px -1px #000;
+	font-family: Arial, Helvetica;
+	font-size: 20pt;
+	font-weight: 900;
+}
+
+.stage .e .title {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 20px 30px;
+	opacity: 1;
+	color: #88f;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-shadow: 0.1em 0.1em 0.2em #000,
+		1px 1px #000,
+		-1px 1px #000,
+		1px -1px #000,
+		-1px -1px #000;
+	font-size: 20pt;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.title h1 {
+	font-weight: 800;
+	margin: 5px 0;
+}
+
+.title h2 {
+	font-weight: 300;
+}
+
+/* hide video controls completely */
+.mejs-container .mejs-controls {
+  display: none !important;
+}
