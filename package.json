@@ -1,0 +1,23 @@
+{
+  "name": "vvmpubinfo",
+  "version": "1.0.0",
+  "description": "This docker image uses [Puppeteer](https://github.com/puppeteer/puppeteer) to take screenshots of some of our pages, and a simple JS based slide show to show them and the current webcam pictures.",
+  "main": "screenshots.js",
+  "dependencies": {
+    "puppeteer": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvmev/vvmpubinfo.git"
+  },
+  "author": "stb@lassitu.de",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vvmev/vvmpubinfo/issues"
+  },
+  "homepage": "https://github.com/vvmev/vvmpubinfo#readme"
+}
