@@ -6,7 +6,7 @@ const fs = require('fs');
 const pages = [
   { url: 'https://www.vvm-museumsbahn.de', file: 'homepage.png' },
   { url: 'https://www.vvm-museumsbahn.de/wordpress/', file: 'blog.png' },
-  { url: 'https://twitter.com/vvmev', file: 'twitter.png' },
+  // { url: 'https://twitter.com/vvmev', file: 'twitter.png' },
   // { url: 'https://www.facebook.com/lokschuppenaumuehle/', file: 'facebook.png' },
 ];
 
