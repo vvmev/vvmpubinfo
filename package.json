@@ -4,7 +4,7 @@
   "description": "This docker image uses [Puppeteer](https://github.com/puppeteer/puppeteer) to take screenshots of some of our pages, and a simple JS based slide show to show them and the current webcam pictures.",
   "main": "screenshots.js",
   "dependencies": {
-    "puppeteer": "^4.0.1"
+    "puppeteer": "^23.6.0"
   },
   "devDependencies": {},
   "scripts": {
